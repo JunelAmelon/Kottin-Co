@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Kottin&Co</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed w-full bg-[#1B2A4A] z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="block">
+                        <img src="assets/img/logo.png" alt="Kottin&Co" class="logo logo-light">
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-beige transition-colors">Accueil</a>
+                    <a href="about.html" class="text-white hover:text-beige transition-colors">À propos</a>
+                    <a href="services.html" class="text-white hover:text-beige transition-colors">Services</a>
+                    <a href="index.html#testimonials" class="text-white hover:text-beige transition-colors">Témoignages</a>
+                    <a href="blog.html" class="text-white hover:text-beige transition-colors">Blog</a>
+                    <a href="contact.html" class="text-white hover:text-beige transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="contact.html" class="hidden lg:inline-block bg-beige text-white px-6 py-3 rounded hover:bg-opacity-90 transition-all">
+                    Prendre rendez-vous
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-white hover:text-beige transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-4">
+                    <a href="index.html" class="block text-white hover:text-beige transition-colors">Accueil</a>
+                    <a href="about.html" class="block text-white hover:text-beige transition-colors">À propos</a>
+                    <a href="services.html" class="block text-white hover:text-beige transition-colors">Services</a>
+                    <a href="index.html#testimonials" class="block text-white hover:text-beige transition-colors">Témoignages</a>
+                    <a href="blog.html" class="block text-white hover:text-beige transition-colors">Blog</a>
+                    <a href="contact.html" class="block text-white hover:text-beige transition-colors">Contact</a>
+                    <a href="contact.html" class="inline-block bg-beige text-white px-6 py-3 rounded hover:bg-opacity-90 transition-all">
+                        Prendre rendez-vous
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-[#1B2A4A] h-[40vh] min-h-[400px] flex items-center">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#1B2A4A] to-[#1B2A4A]/90"></div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">À Propos de Kottin&Co</h1>
+                    <p class="text-xl text-white/90">Votre partenaire de confiance en gestion de patrimoine depuis plus de 20 ans.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Notre Histoire</h2>
+                        <p class="text-gray-600 mb-4">Fondée en 2000, Kottin&Co est née de la vision d'offrir des services de gestion de patrimoine personnalisés et innovants. Notre engagement envers l'excellence et la satisfaction client nous a permis de devenir un leader reconnu dans le secteur.</p>
+                        <p class="text-gray-600 mb-4">Au fil des années, nous avons développé une expertise approfondie dans tous les aspects de la gestion de patrimoine, en nous adaptant constamment aux évolutions du marché et aux besoins de nos clients.</p>
+                        <div class="grid grid-cols-2 gap-8 mt-8">
+                            <div class="text-center">
+                                <span class="text-4xl font-bold text-beige">20+</span>
+                                <p class="text-gray-600">Années d'expérience</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-4xl font-bold text-beige">1000+</span>
+                                <p class="text-gray-600">Clients satisfaits</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/img/about-image.jpg" alt="Notre équipe" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section class="bg-gray-50 py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">Nos Valeurs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="fas fa-heart text-4xl text-beige mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Intégrité</h3>
+                        <p class="text-gray-600">Nous agissons toujours dans l'intérêt de nos clients avec honnêteté et transparence.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="fas fa-lightbulb text-4xl text-beige mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+                        <p class="text-gray-600">Nous recherchons constamment de nouvelles solutions pour optimiser les résultats.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="fas fa-users text-4xl text-beige mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
+                        <p class="text-gray-600">Nous travaillons en étroite collaboration avec nos clients pour atteindre leurs objectifs.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <i class="fas fa-star text-4xl text-beige mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Excellence</h3>
+                        <p class="text-gray-600">Nous visons l'excellence dans chaque aspect de notre service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">Notre Équipe</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="assets/img/team1.jpg" alt="Team Member" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Jean Dupont</h3>
+                            <p class="text-gray-600 mb-4">Directeur Général</p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-beige hover:text-opacity-80"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-beige hover:text-opacity-80"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="assets/img/team2.jpg" alt="Team Member" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Marie Martin</h3>
+                            <p class="text-gray-600 mb-4">Conseillère Senior</p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-beige hover:text-opacity-80"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-beige hover:text-opacity-80"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="assets/img/team3.jpg" alt="Team Member" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Pierre Dubois</h3>
+                            <p class="text-gray-600 mb-4">Expert Financier</p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-beige hover:text-opacity-80"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-beige hover:text-opacity-80"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-[#1B2A4A] text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">Prêt à Commencer Votre Voyage Financier ?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Découvrez comment notre expertise peut vous aider à atteindre vos objectifs financiers.</p>
+                <a href="contact.html" class="inline-block bg-beige text-white px-8 py-4 rounded text-lg font-semibold hover:bg-opacity-90 transition-all">
+                    Contactez-nous
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1B2A4A] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div>
+                    <img src="assets/img/logo.png" alt="Kottin&Co" class="h-24 mb-4 brightness-0 invert">
+                    <p class="text-gray-300">Votre partenaire de confiance pour la gestion de patrimoine et le conseil financier.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-beige transition-colors">Accueil</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-beige transition-colors">À propos</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-beige transition-colors">Services</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-beige transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-beige transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Nos Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-beige transition-colors">Gestion de Patrimoine</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-beige transition-colors">Planification Financière</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-beige transition-colors">Conseil en Investissement</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-beige transition-colors">Protection du Patrimoine</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span class="text-gray-300">123 Rue du Commerce, 75000 Paris</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+33123456789" class="text-gray-300 hover:text-beige transition-colors">+33 1 23 45 67 89</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:contact@kottinco.com" class="text-gray-300 hover:text-beige transition-colors">contact@kottinco.com</a>
+                        </li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-beige transition-colors"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-beige transition-colors"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-beige transition-colors"><i class="fab fa-facebook text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2023 Kottin&Co. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
