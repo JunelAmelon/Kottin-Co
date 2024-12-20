@@ -25,7 +25,6 @@
     </script>
 </head>
 <body class="bg-white">
-    <!-- Header -->
     <header class="fixed w-full top-0 z-50 bg-[#1B2A4A] shadow-lg">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center h-20">
@@ -36,17 +35,19 @@
                     </a>
                 </div>
 
-                <!-- Desktop Menu -->
+                <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-white hover:text-beige transition-colors">Accueil</a>
-                    <a href="index.html#about" class="text-white hover:text-beige transition-colors">À propos</a>
-                    <a href="index.html#services" class="text-white hover:text-beige transition-colors">Services</a>
-                    <a href="blog.html" class="text-white hover:text-beige transition-colors">Blog</a>
-                    <a href="index.html#contact" class="text-white hover:text-beige transition-colors">Contact</a>
-                    <a href="#contact" class="bg-beige text-white px-6 py-3 rounded hover:bg-opacity-90 transition-all">
-                        Prendre rendez-vous
-                    </a>
+                    <a href="#" class="text-white font-medium hover:text-beige transition-colors">Accueil</a>
+                    <a href="#about" class="text-white font-medium hover:text-beige transition-colors">À propos</a>
+                    <a href="#services" class="text-white font-medium hover:text-beige transition-colors">Services</a>
+                    <a href="blog.html" class="text-white font-medium hover:text-beige transition-colors">Blog</a>
+                    <a href="#contact" class="text-white font-medium hover:text-beige transition-colors">Contact</a>
                 </div>
+
+                <!-- CTA Button -->
+                <a href="#contact" class="hidden md:inline-block bg-beige text-white px-6 py-3 rounded hover:bg-opacity-90 transition-all">
+                    Prendre rendez-vous
+                </a>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
@@ -63,8 +64,8 @@
                 <div class="h-full flex flex-col">
                     <!-- Header with close button -->
                     <div class="flex justify-between items-center p-6">
-                        <img src="assets/img/logo.png" alt="Logo" class="h-36">
-                        <button id="close-menu-button" class="text-white hover:text-beige focus:outline-none">
+                        <img src="assets/img/logo.png" alt="Logo" class="h-24">
+                        <button id="close-mobile-menu-button" class="text-white hover:text-beige focus:outline-none">
                             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
@@ -74,12 +75,12 @@
                     <!-- Navigation Links -->
                     <nav class="flex-grow flex flex-col justify-center px-8">
                         <div class="space-y-8">
-                            <a href="index.html" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Accueil</a>
-                            <a href="index.html#about" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">À propos</a>
-                            <a href="index.html#services" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Services</a>
+                            <a href="#accueil" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Accueil</a>
+                            <a href="#about" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">À propos</a>
+                            <a href="#services" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Services</a>
                             <a href="blog.html" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Blog</a>
-                            <a href="index.html#testimonials" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Témoignages</a>
-                            <a href="index.html#contact" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Contact</a>
+                            <a href="#testimonials" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Témoignages</a>
+                            <a href="#contact" class="mobile-menu-link block text-3xl font-semibold text-white hover:text-beige transform hover:translate-x-2 transition-all duration-300">Contact</a>
                         </div>
                     </nav>
 
